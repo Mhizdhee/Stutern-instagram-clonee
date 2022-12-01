@@ -1,0 +1,517 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color:ghostwhite;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+}
+.container{
+    position: relative;
+}
+/* aside styling */
+aside{
+    background-color: white;
+    width: 20%;
+    height: 100vh;
+    border-right: 0.5px solid rgb(211, 211, 211);
+    position: fixed;
+    top: 0;
+}
+
+nav p:hover{
+    cursor: pointer;
+    background-color: ghostwhite;
+    border: none;
+    border-radius: 20px;
+    width: 70%;
+    margin: 10px;
+}
+
+aside nav{
+    /* padding: 5px; */
+    /* margin: 15px; */
+}
+
+aside p {
+    padding: 10px;
+    
+}
+
+aside p  i{
+    padding: 15px;
+}
+
+aside img{
+    padding: 10px;
+    position: relative;
+    top:16px
+}
+/* main styling */
+
+.story-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 290px;
+    margin: 3%;
+    background-color: white;
+    border-radius: 10px;
+    border: 0.5px solid rgb(206, 204, 204);
+    padding: 15px;
+}
+
+.story-card:hover{
+    cursor: pointer;
+}
+
+.insta-stories img{
+    border-radius: 50%;
+    border-left: 2px solid rgb(218, 24, 218);
+    border-top: 2px solid purple;
+    border-bottom: 2px solid orangered;
+    border-right: 2px solid orange;
+    width: 70px;
+    padding: 2.5px;
+}
+
+.insta-stories p{
+    padding: 5px;
+}
+
+
+.post-card{
+    
+    position: absolute;
+    top: 70px;
+    width: 58%;
+    height: 100vh;
+    left: 290px;
+    margin: 10% 5% 0 3%;
+    
+}
+
+.post-card .image{
+    width: 74%;
+    height: 74vh;
+}
+.user-profile{
+
+    background-color: white; 
+    border-radius: 10px 10px 0 0;
+    border: 0.5px solid rgb(206, 204, 204);
+    display: flex;
+    padding: 15px;
+    width: 74%;
+}
+
+.user-profile:hover{
+    cursor: pointer;
+}
+.user-profile p{
+    padding: 10px;
+    font-weight: 600;
+}
+
+.user-profile small{
+    padding: 10px;
+    position: absolute;
+    top: 20px;
+    margin-top: 20px;
+    left: 75px;
+}
+.user-profile h2{
+    position: absolute;
+    left: 540px;
+}
+.user-profile img{
+    border-radius: 50%;
+    width: 60px;
+    
+}
+
+.post-card .user-post{
+    background-color: white;
+    border-radius:0 0 10px 10px ;
+    border: 0.5px solid rgb(206, 204, 204);
+    width: 74%;
+    /* height: 20px; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    /* padding: 15px; */
+}
+.userpost-img{
+    padding: 10px;
+}
+.userpost-img .label{
+    margin:0  0 0 70%;
+}
+.user-post .likes{
+    margin: 30px 70px 0 0;
+    
+}
+
+/* last section styling */
+.lastsection{
+    position: relative;
+    top: 0;
+    left: 895px;
+    margin: 3%;
+    width: 30%;
+    
+}
+.lastsection .myProfile{
+    position: absolute;
+    top: 60px;
+    display:flex;
+    flex-direction: row;
+    padding: 0;
+    
+    
+}
+
+.myProfile img{
+ width: 25%;
+ /* padding: 15px; */
+ border-radius: 50%;
+}
+.myProfile img:hover{
+    cursor: pointer;
+}
+
+.myProfile h2:hover{
+    cursor: pointer;
+}
+
+.myProfile h2{
+    font-size: 15px;
+    padding-left: 15px;
+   font-weight: 500;
+   
+}
+.myProfile p{
+    position: absolute;
+    top: 25px;
+    left: 40px;
+    align-self: center;
+    width: 100%;
+    padding-left:  35px;
+    color: grey;
+}
+
+.myProfile a{
+    text-decoration: none;
+    color: rgb(48, 153, 202);
+    font-weight: 700;
+    position: absolute;
+    left: 330px;
+    padding: 10px;
+}
+
+.myProfile a:hover{
+    cursor: pointer;
+}
+
+.suggestions{
+    position: absolute;
+    top: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+.suggestions .sugg{
+    padding: 10px;
+    color: gray;
+}
+
+.suggestions .see{
+    position: absolute;
+    left: 330px;
+    width: 120px;
+    padding: 10px;
+} 
+
+.vic-profile{
+    position: absolute;
+    top: 215px;
+    display:flex;
+    flex-direction: row;
+    padding: 0;
+    
+}
+
+.vic-profile img{
+    border-radius: 50%;
+    width: 15% ;
+}
+
+.vic-profile img:hover{
+    cursor: pointer;
+}
+.vic-profile p{
+    padding-left: 15px;
+    width: 100%;
+    
+    
+}
+.vic-profile p:hover{
+    cursor: pointer;
+}
+.vic-profile small{
+
+    position: absolute;
+    top: 28px;
+    left: 19px;
+    width: 100%;
+    padding-left:  35px;
+    color: grey;
+}
+
+.vic-profile a{
+    text-decoration: none;
+    color: rgb(48, 153, 202);
+    font-weight: 700;
+    position: absolute;
+    left: 330px;
+    padding: 10px;
+}
+
+.adeyy-profile{
+    
+    position: absolute;
+    top: 275px;
+    display:flex;
+    flex-direction: row;
+    padding: 0;
+}
+
+.adeyy-profile img{
+    width: 20%;
+    border-radius: 50%;
+}
+
+.adeyy-profile img:hover{
+    cursor: pointer;
+}
+.adeyy-profile p{
+    padding-left: 15px;
+    width: 100%;
+    
+    
+}
+.adeyy-profile p:hover{
+    cursor: pointer;
+}
+.adeyy-profile small{
+
+    position: absolute;
+    top: 28px;
+    left: 19px;
+    width: 100%;
+    padding-left:  35px;
+    color: grey;
+}
+
+.adeyy-profile a{
+    text-decoration: none;
+    color: rgb(48, 153, 202);
+    font-weight: 700;
+    position: absolute;
+    left: 330px;
+    padding: 10px;
+}
+
+/* kayc */
+
+.kayc-profile{
+    
+    position: absolute;
+    top: 335px;
+    display:flex;
+    flex-direction: row;
+    padding: 0;
+}  
+
+
+.kayc-profile img{
+    width: 20%;
+    border-radius: 50%;
+}
+
+.kayc-profile img:hover{
+    cursor: pointer;
+}
+.kayc-profile p{
+    padding-left: 10px;
+    width: 100%;
+    
+    
+}
+.kayc-profile p:hover{
+    cursor: pointer;
+}
+.kayc-profile small{
+
+    position: absolute;
+    top: 28px;
+    left: 19px;
+    width: 100%;
+    padding-left:  40px;
+    color: grey;
+}
+
+.kayc-profile a{
+    text-decoration: none;
+    color: rgb(48, 153, 202);
+    font-weight: 700;
+    position: absolute;
+    left: 330px;
+    padding: 10px;
+}
+
+ /* nei */
+
+.nei-profile{
+    
+    position: absolute;
+    top: 405px;
+    display:flex;
+    flex-direction: row;
+    padding: 0;
+}
+
+.nei-profile img{
+    width: 20%;
+    border-radius: 50%;
+}
+.nei-profile img:hover{
+    cursor: pointer;
+}
+.nei-profile p{
+    padding-left: 15px;
+    width: 100%;
+    
+    
+}
+.nei-profile p:hover{
+    cursor: pointer;
+}
+.nei-profile small{
+
+    position: absolute;
+    top: 28px;
+    left: 19px;
+    width: 100%;
+    padding-left:  40px;
+    color: grey;
+}
+
+.nei-profile a{
+    text-decoration: none;
+    color: rgb(48, 153, 202);
+    font-weight: 700;
+    position: absolute;
+    left: 330px;
+    padding: 10px;
+}
+
+ /* titi */
+
+.titi-profile{
+    position: absolute;
+    top: 470px;
+    display:flex;
+    flex-direction: row;
+    padding: 0;
+}
+
+.titi-profile img{
+    width: 20%;
+    border-radius: 50%;
+}  
+
+.titi-profile img:hover{
+    cursor: pointer;
+}
+.titi-profile p{
+    padding-left: 15px;
+    width: 100%;
+    
+    
+}
+.titi-profile p:hover{
+    cursor: pointer;
+}
+.titi-profile small{
+
+    position: absolute;
+    top: 28px;
+    left: 19px;
+    width: 100%;
+    padding-left:  40px;
+    color: grey;
+}
+
+.titi-profile a{
+    text-decoration: none;
+    color: rgb(48, 153, 202);
+    font-weight: 700;
+    position: absolute;
+    left: 330px;
+    padding: 10px;
+}
+footer{
+position: relative;
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+}
+ .footer-cont{
+   
+    position: absolute;
+    top: 540px;
+    left: 645px;
+    /* padding: 5px; */
+}
+ .footer-lists{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 13px;
+    width: 95%;
+    color: gray;
+    
+ }
+ 
+.footer-lists li{
+    
+   margin: 2px;
+   position: relative;
+   left: 290px;
+   list-style: none;
+}
+li span{
+    font-size: 13px;
+   
+}
+
+ .footer-cont p{
+    position: absolute;
+    top: 60px;
+    left: 290px;
+    width: 100%;
+    color: gray;
+    font-size: 12px;
+    font-weight: 500;
+ }
